@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="app">
+      <article id="app-container">
+        <p id="location"></p>
+        <div id="image"></div>
+        <p id="date">23.06.2021</p>
+        <p id="temperature"></p>
+        <p id="weather-main"></p>
+        <div id="aux-info">
+          <div id="feels">
+            <p>Feels like</p>
+            <span id="feels-like"></span>
+          </div>
+          <div id="wind-block">
+            <p>wind</p>
+            <div id="wind">
+              <p id="wind-direction"></p>
+              <p id="wind-power"></p>
+            </div>
+          </div>
+          <div id="humidity">
+            <p id="humidity-title">Humidity</p>
+            <p id="humidity-data"></p>
+          </div>
+          <div id="pressure">
+            <p id="press-title">Pressure</p>
+            <p id="press-data"></p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
