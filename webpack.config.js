@@ -23,8 +23,8 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Webpack Boilerplate',
-      favicon: './src/img/hard-hat.ico',
+      title: 'Weather Where You Are',
+      favicon: './src/img/sun.ico',
       template: path.resolve(__dirname, './src/template.html'), // template file
       filename: 'index.html', // output file
     }),
