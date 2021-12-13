@@ -12,7 +12,7 @@ async function getData(position) {
   try {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    const currentUrl = `/.netlify/functions/weatherApi?lat=${lat}&lon=${lon}&units=metric&lang=en`;
+    const currentUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.WEATHER_API_KEY}&units=metric&lang=en`;
     const resp = await fetch(currentUrl);
     const respData = await resp.json();
     console.log(respData);
