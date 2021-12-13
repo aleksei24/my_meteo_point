@@ -9,12 +9,12 @@ const weatherIcon = document.querySelector('#image');
 weatherIcon.classList = 'm-auto';
 
 const weatherWind = document.querySelector('#wind');
-weatherWind.classList = 'flex items-center justify-center';
+weatherWind.classList = 'flex flex-col items-center justify-center xxs:flex-row';
 
 const weatherWindDirection = document.querySelector('#wind-direction');
 const weatherWindPower = document.querySelector('#wind-power');
-weatherWindPower.classList = 'px-1 font-medium text-sm';
-weatherWindDirection.classList = 'px-1 font-medium capitalize text-sm border-r-2';
+weatherWindPower.classList = 'px-1 font-medium text-xs xxs:text-sm';
+weatherWindDirection.classList = 'px-1 font-medium capitalize text-xs xxs:text-sm border-r-2';
 
 const weatherTemperature = document.querySelector('#temperature');
 weatherTemperature.classList = 'text-4xl font-medium py-4 px-2';
