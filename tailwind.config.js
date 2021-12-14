@@ -6,6 +6,11 @@ module.exports = {
   theme: {
     colours: {},
     extend: {},
+    screens: {
+      xs: '450px',
+      xxs: '320px',
+      ...defaultTheme.screens,
+    },
   },
   variants: {
     extend: {},
