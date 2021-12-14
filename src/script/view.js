@@ -14,7 +14,8 @@ weatherWind.classList = 'flex flex-col items-center justify-center xxs:flex-row'
 const weatherWindDirection = document.querySelector('#wind-direction');
 const weatherWindPower = document.querySelector('#wind-power');
 weatherWindPower.classList = 'px-1 font-medium text-xs xxs:text-sm';
-weatherWindDirection.classList = 'px-1 font-medium capitalize text-xs xxs:text-sm border-r-2';
+weatherWindDirection.classList =
+  'px-1 font-medium capitalize text-xs xxs:text-sm border-r-0 xxs:border-r-2';
 
 const weatherTemperature = document.querySelector('#temperature');
 weatherTemperature.classList = 'text-4xl font-medium py-4 px-2';
@@ -55,7 +56,7 @@ pressureBrick.classList = 'text-center';
 const pressureTitle = document.querySelector('#press-title');
 pressureTitle.classList = 'text-xs';
 const pressureData = document.querySelector('#press-data');
-pressureData.classList = 'font-medium';
+pressureData.classList = 'font-medium text-xs xxs:text-sm';
 
 [feels, windBlock, humidityBrick, pressureBrick].forEach((el) => {
   el.classList = 'p-2 border-2 border-solid text-center';
